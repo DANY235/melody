@@ -14,11 +14,11 @@ $(document).ready(function () {
     counterUp.on('click', function () {
         if (currentFloor < 18) { // проверяем значение этажа, оно не должно быть больше 18
             currentFloor++; // прибавляем один этаж 
-        usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits: 2,
-        useGrouping: false }); // форматируем переменную с этажом, чтобы было 01 а не 1
-        $('.counter').text(usCurrentFloor); //записываем значение в счетчик справа
-        floorPath.removeClass("current-floor"); //удаляем активный класс у этажа
-        $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor"); // подсвечиваем текущий этаж
+            usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits: 2,
+            useGrouping: false }); // форматируем переменную с этажом, чтобы было 01 а не 1
+            $('.counter').text(usCurrentFloor); //записываем значение в счетчик справа
+            floorPath.removeClass("current-floor"); //удаляем активный класс у этажа
+            $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor"); // подсвечиваем текущий этаж
         }
     });
 
@@ -26,10 +26,10 @@ $(document).ready(function () {
         if (currentFloor > 2) {
             currentFloor--;
             usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits: 2,
-        useGrouping: false });
-        $('.counter').text(usCurrentFloor);
-        floorPath.removeClass("current-floor");
-        $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor");
+            useGrouping: false });
+            $('.counter').text(usCurrentFloor);
+            floorPath.removeClass("current-floor");
+            $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor");
         }
     })
 });
