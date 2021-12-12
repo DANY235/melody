@@ -112,7 +112,7 @@ body {
 
 .main-title {
   margin: 0;
-  font-family: "Bebas Neue Cyrillic", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
   font-size: 37px;
   line-height: 37px;
@@ -120,7 +120,7 @@ body {
 }
 
 .counter {
-  font-family: "Bebas Neue Cyrillic", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 124px;
   color: #635854;
   margin-top: 10px;
