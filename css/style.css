@@ -40,13 +40,20 @@ body {
 }
 
 .navbar-item {
-  margin-left: 40px;
-  margin-right: 40px;
+  /* margin-left: 40px;
+  margin-right: 40px; */
+  padding: 5px 40px;
 }
 
 .navbar-link {
   text-decoration: none;
   color: #fff;
+}
+
+.navbar-item:hover {
+  background-color: #3993ec;
+  transition: 0.3s;
+  border-radius: 5px;
 }
 
 .navbar-contacts {
@@ -72,11 +79,13 @@ body {
 .main {
   max-width: 1280px;
   margin: auto;
-  padding-top: 54px;
+  padding-top: 58px;
+  padding-bottom: 99px;
   display: flex;
 }
 
 .main-info {
+  padding: 67px 0;
   flex-grow: 1;
   text-align: center;
   display: flex;
@@ -138,6 +147,93 @@ path.current-floor {
   border: none;
   padding: 16px 36px;
   cursor: pointer;
+}
+
+footer {
+  background-color: #d7d7d7;
+  border-top: 4px solid #3596f5;
+  padding-top: 50px;
+  padding-bottom: 56px;
+}
+
+.footer {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  margin-right: 37px;
+}
+
+.footer-phone {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  margin-right: 59px;
+  color: #635854;
+  font-style: normal;
+}
+
+.footer-text {
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-tel {
+  font-weight: 700;
+  text-decoration: none;
+  color: #635854;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.social {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  min-width: 500px;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link {
+  font-family: "Roboto";
+  text-decoration: underline;
+  color: #635854;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.footer-link:hover {
+  color: #2c2421;
+  transition: 0.4s;
+}
+
+.oferts {
+  margin-left: 20px;
+}
+
+.contact {
+  margin-left: 20px;
 }
 
 .modal {
